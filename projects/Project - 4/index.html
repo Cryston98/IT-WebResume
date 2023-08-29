@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Random Question & JS Local Storage</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+   
+</head>
+<body>
+	<form class="form" id="form">
+		<h4 id="score">Score : 0</h4>
+		<h1 id="questionID">What is 1 multiplay by two</h1>
+		<input type="text" id="inputValue" placeholder="Enter your answer" autofocus autocomplete="off">
+		<!--autofocus pt a se focaliza pe casuta de introducere si autocomplet of pt a elimina sugestile date in functie de istoric interactiunilor anteioare-->
+		<button id="btn-submit" type="sumbit">Check</button>
+	</form>
+
+	<div id="menu-game">
+		
+		<div id="item-menu">
+			<div id="content-item">
+				
+			</div>
+			<div id="section-wrap">				
+				<div class="section-item" id="section-one"></div>
+				<div class="section-item" id="section-two"></div>
+				<div class="section-item" id="section-three"></div>
+
+			</div>
+			<h3 class="text-menu-item">PLAY</h3>
+
+			<div id="green-elem1"></div>
+			<div id="green-elem2"></div>
+
+		</div>
+
+	</div>
+
+	<div id="cnt-player">
+		
+		<div class="cnt-play">
+			<img class="players-class" src="img/one.png" id="player-one">
+			<h1 class="text-player-class">One Player</h1>
+
+		</div>
+		<div class="cnt-play">
+			<img class="players-class" src="img/two.png" id="player-two">
+			<h1 class="text-player-class">Two Players</h1>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="js/script.js" ></script>
+
+</body>
+</html> 

@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&displat=swap">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bungee&family=Roboto+Condensed:wght@300&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+	<title>Web Dev CV - Deaconu Adrian</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--LINK DE SCRIP ASA ESTE INDICAT DE FONT ASWESOME SA FIE INTRODUS IN ACEASTA ZONA-->
+	<script src="https://kit.fontawesome.com/0c7c03ef12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+			<img src="img/logo.png" alt="LOGO" class="logo">
+			<nav>
+				<ul>
+					<li><a id="projectPage" onclick="showSection(1)"  href="#listSkills">PROJECTS</a></li>
+					<li><a id="trainingPage" onclick="showSection(3)"  href="#listSkills">TRAINING STATUS</a></li>
+					<li><a id="cvPage" class="visitedPage" onclick="showSection(2)" href="#cv-info">CV / ABOUT</a></li>
+				</ul>
+			</nav>
+			<img src="img/menu.png" alt="MENU" class="menu-icon">
+		</div>
+
+
+		<div class="row">
+				<div id="cv-info">
+					<div id="cv-content">
+						
+						<div id="menuCV">
+							<ul>
+								<li onclick="showDateCV(1)">About <i class="fa-solid fa-user"></i></li>
+								<li onclick="showDateCV(2)">Resume <i class="fa-solid fa-file-lines"></i></li>
+								<li onclick="showDateCV(3)">Work <i class="fa-solid fa-feather-pointed"></i></li>
+								<li onclick="showDateCV(4)">Contact <i class="fa-solid fa-phone"></i></li>
+							</ul>
+
+						</div>
+
+						<div id="leftSection-CV" class="col-cv">
+							
+							<div class="itemsLeftSection">
+								<img src="img/profile.jpeg" class="cv-photo" style="width:100%; clip-path: polygon(0% 0%,0% 85%,50% 100%,100% 85%,100% 0%);">
+								<p class="nameInfo">Deaconu Adrian</p>
+								<span class="profesionInfo">Explorator</span>
+								<div id="socialMedia">
+									<a hred=""><i class="fa-brands fa-twitter"></i></a>
+									<a hred=""><i class="fa-brands fa-github"></i></a>
+									<a hred=""><i class="fa-brands fa-youtube"></i></a>
+									<a hred=""><i class="fa-brands fa-linkedin"></i></a>
+									<a hred=""><i class="fa-brands fa-instagram"></i></a>
+								</div>
+
+							</div>
+
+
+							
+
+
+
+						</div>
+						<div id="rightSection-CV" class="col-cv">
+							
+
+							<div class="rightItemSection-CV">
+
+
+							
+								<div id="aboutSectionRightCV" class="itemsRightSection-CV">
+									<p class="titleSectionRightCV">About <span>Me</span></p>
+									
+
+									<div id="aboutPage1">
+										<div class="paginationAbout">
+											<span onclick="showPageAbout(2)"class="pageNr"> Next Page <i class="fa-solid fa-angles-right"></i> </span>
+										</div>
+										
+										<div id="description-personal">
+										<div id="description-section" class="resumeSections">
+
+											<span id="resumeDescription"><i class="fa-solid fa-pencil"></i> Self Description</span>
+
+												<p style="color:#515252;">Salut! Mă numesc Adrian, dar prietenii îmi spun Adi. Modul în care mă văd pe mine este ca fiind o persoană curioasă și dornică să învăț cât mai multe lucruri. Îmi place să descopăr lucruri noi, dar îmi place și să folosesc cunoștințele dobândite pentru a-mi dezvolta și a crea abilitățile care să mă ajute să evoluez. Am o fire calmă, liniștită și orientată spre îndeplinirea cât mai bună a obiectivelor pe care le am. În ceea ce privește modurile mele de acțiune, sunt o persoană punctuală și atentă la detalii. Atunci când nu înțeleg sau nu știu ceva, nu las lucrurile în seama altcuiva; știu că pot să pun întrebări și o fac din dorința de a mă dezvolta. În prezent, nu sunt adeptul unei anumite categorii de job (mental sau fizic); îmi place să explorez ambele categorii și să observ beneficiile și dezavantajele fiecăreia și să le simt pe propria piele. Consider că sunt capabil să învăț rapid lucruri noi și, ca urmare, să mă adaptez ușor la situații noi. Modul în care prefer să privesc lumea este cel în care îmi folosesc percepția și simțirea în loc de idei primite din exterior, totuși îmi place să-mi folosesc și imaginația pentru a mă plasa în diferite situații și stări. Acest lucru îmi dezvoltă capacitatea de a fi empatic și de a înțelege perspectiva persoanelor din jurul meu. </p>
+
+											<div class="separator-resume"></div>
+
+											<span id="resumeHobby"><i class="fa-solid fa-feather-pointed"></i> Key Qualities</span>
+												
+
+													<div id="hobby-wrap-key">
+														<div class="card-key-qualities">
+															<span class="hide-popup-key">I am flexible in my working hours, being able to work evenings and weekends. Also I am able to change my job tasks</span>
+															<p>Flexible </p>
+														</div>
+
+														<div class="card-key-qualities">
+															<span class="hide-popup-key">I supported junior team members to help them achieve their longer-term career goals.</span>
+															<p>Teamwork </p>
+														</div>
+
+														<div class="card-key-qualities">
+															<span class="hide-popup-key">Why </span>
+															<p>Fast Learner </p>
+														</div>
+
+														<div class="card-key-qualities">
+															<span class="hide-popup-key">Nu astept ca cineva sa imi zica ceva pt a face ce conside eu ca este bine si corect.  Cand lucram la KFC si era prea aglomera iar colegi din fata strigau sa schimbe cineva cola, si nimeni nu o facea mergeam eu, sau cand se termina carne de pe gratar si casieri strigau sa se schimbe gratarul si cei din spate nu auzeau mergem si le ziceau eu ca sa terminat si sa schimbe gratarul nu astempat ca casieri sa strige din nou. Uneori il schimbam eu daca nu avem senvisuri de facut.  While managers are ultimately responsible for the work of the employees they manage, they typically value candidates who don't always wait to be told what to do. Showing initiative involves being proactive with how you operate and solving potential problems before they become an issue. You may also show initiative by devising new, more efficient ways to approach tasks that other employees can use. This increases the overall effectiveness and productivity of the team.
+															</span>
+															<p>Initiative </p>
+														</div>
+
+													</div>	
+
+										
+
+										</div>
+
+
+										<div id="personal-section" class="resumeSections">
+										   
+										   <span id="resumePersonal"><i class="fa-solid fa-tags"></i> Personal Info</span>
+										   	
+										   <div class="personalDataItem">
+										   		<p><div class="PI">Birth Date</div> <span>24 Aprilie - 1998</span></p>
+										   </div>
+
+										   <div class="personalDataItem">
+										   		<p><div class="PI">Height </div><span>5 Feet and 6 Inch / 167cm</span></p>
+										   </div>
+
+
+										  
+
+										   <div class="personalDataItem">
+										   		<p><div class="PI">Sex </div><span>Male(M)</span></p>
+										   </div>
+
+										   <div class="personalDataItem">
+										   		<p><div class="PI">Nationality </div><span>Romana</span></p>
+										   </div>
+
+
+										   <div class="personalDataItem">
+										   		<p><div class="PI">Birth Place </div><span>Romania, Jud. Gorj</span></p>
+										   </div>
+
+										    <div class="personalDataItem">
+										   		<p><div class="PI">Study Level </div> <span>Superior</span></p>
+										   </div>
+
+										    <div class="personalDataItem">
+										   		<p><div class="PI">Drive License </div> <span>AM,B1,B,</span></p>
+										   </div>
+
+										   <div class="personalDataItem">
+										   		<p><div class="PI">Civil Status </div><span>Singur</span></p>
+										   </div>
+
+
+										   
+										   					
+
+
+										</div>
+									</div>
+
+
+									</div>
+									<div id="aboutPage2">
+										<div class="paginationAbout">
+											<span onclick="showPageAbout(1)"class="pageNr"> Back Page  <i class="fa-solid fa-angles-left"></i> </span>
+										</div>
+										<div id="description-personal2">
+
+										<div id="Hobby-section-1" class="resumeSections">
+											<span id="resumeHobby"><i class="fa-solid fa-heart"></i> Hobby</span>
+												
+
+													<div id="hobby-wrap">
+														<div class="card-hobby">
+															<i class="fa-solid fa-music"></i>
+															<p>Music</p>
+														</div>
+
+														<div class="card-hobby">
+															<i class="fa-solid fa-book-open-reader"></i>
+															<p>Reading</p>
+														</div>
+
+														<div class="card-hobby">
+															<i class="fa-regular fa-image"></i>
+															<p>Anime</p>
+														</div>
+
+														<div class="card-hobby">
+															<i class="fa-solid fa-yin-yang"></i>
+															<p>Meditation</p>
+														</div>
+													</div>
+
+
+														<div class="separator-resume"></div>
+
+													<span id="why-hire-me-section"><i class="fa-solid fa-pencil"></i> Why Hire Me ?</span>
+
+														<p style="color:#515252;">Din informațiile prezentate în acest CV, se poate observa că am lucruri similare și în comun cu toți ceilalți, dar și lucruri diferite. Totuși, ceea ce mă pune în față și motivele pentru care cred că aș fi valoros pentru compania dvs sunt dorința mea de a experimenta și a învăța lucruri noi, precum și dorința de a crea și folosi acele cunoștințe la un nivel cât mai ridicat și cât mai aproape de perfecțiune. Consider că atât lumea, cât și societatea din prezent caută să obțină perfecțiunea. Pe de altă parte, scopul firmelor și companiilor este să ofere perfecțiunea, iar eu, în această ecuație, caut să-mi dezvolt abilitatea de a crea și oferi perfecțiunea. Din acest motiv, cum atât eu cât și dumneavoastră ne dorim să oferim perfecțiune, consider că m-aș potrivi în această ecuație: compania dvs + eu = vom cuceri lumea.</p>
+
+														<div class="separator-resume"></div>
+
+											
+
+										</div>
+										
+										<div class="separator-resume"></div>
+
+										<div id="domainsOFInterests" class="resumeSections">
+
+												<span id="resumeHobby"><i class="fa-solid fa-heart"></i> Domains of Interests</span>
+												
+
+													<div id="myChart2">
+													  <canvas id="myChart"></canvas>
+													</div>
+
+
+										</div>
+									</div>
+									</div>
+									
+
+									
+									
+
+
+									
+
+							
+
+
+								</div>
+
+								<div id="resumeSectionRightCV" class="itemsRightSection-CV">
+									<p class="titleSectionRightCV"><span>Resume</span></p>
+									
+									
+									<div id="edu_exp">
+										<div id="edu-section" class="resumeSections">
+
+											<span id="resumeEducation"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+
+											<div class="date-resume">2017 - 2021</div>
+											<div class="name-resume">Universitatea Politehnica Timisoara</div>
+											<div class="location-resume">Romania, Judet Timis</div>
+										    <div class="description-resume">Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson,</div>
+
+											<div class="separator-resume"></div>
+
+											<div class="date-resume">2013 - 2017</div>
+											<div class="name-resume">Liceul Teoretic Novaci</div>
+											<div class="location-resume">Romania, Judet Gorj</div>
+										    <div class="description-resume">Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson,</div>
+
+
+										</div>
+										<div id="exp-section" class="resumeSections">
+										   <span class="resumeSections" id="resumeExperience"><i class="fa-solid fa-briefcase"></i> Experience</span>
+											
+											<div class="date-resume">2017 - PRESENT</div>
+											<div class="name-resume">Personal Project create durint the learning process</div>
+											<div class="location-resume">Romania, Judet Timis</div>
+										    <div class="description-resume">In cadrul procesului de invatare si de dobandire a cunostiintelor ce au fost notate in rubrica de mai jos, am dezvoltat diferite proiecte ce m-au ajutat sa inteleg, validez si sa sedimentez informatile obtinute. Proiectele pe care le-am creat in decursul acestor ani pot fi accesate pe contul meu de github - <a id="githubLink" href="https://github.com/Cryston98" >@Cryston98</a></div>
+
+										</div>
+									</div>
+
+									
+
+									<div id="design_lang">
+										<div id="design-section" class="resumeSections">
+
+											<span id="resumeDesign"><i class="fa-solid fa-paintbrush"></i> Design</span>
+										
+
+											
+
+
+											<div id="itemDesign">
+												<p class="titleItem"><i class="fa-solid fa-laptop-code"></i> Web Design</p>
+												
+												<div class="itemDesignBar">
+													<span class="itemPrecent webItem">
+														<span class="tooltip">85%</span>
+													</span>
+												</div>
+											</div>
+
+
+
+
+											<div id="itemDesign">
+												<p class="titleItem"><i class="fa-solid fa-mobile-screen"></i> Mobile Design</p>
+												
+												<div class="itemDesignBar">
+													<span class="itemPrecent mobileItem">
+														<span class="tooltip">70%</span>
+													</span>
+												</div>
+											</div>
+
+
+
+
+											<div id="itemDesign">
+												<p class="titleItem"><i class="fa-solid fa-palette"></i> Photoshop </p>
+												
+												<div class="itemDesignBar">
+													<span class="itemPrecent photoshopItem">
+														<span class="tooltip">75%</span>
+													</span>
+												</div>
+											</div>
+									
+											
+
+											<div class="separator-resume"></div>
+
+											
+
+										</div>
+										<div id="lang-section" class="resumeSections">
+										   <span id="resumeLang"><i class="fa-solid fa-flag"></i> Languages</span>
+										   <p>English 
+										   		<span id="lang-level">
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   		</span>
+										   	</p>
+
+										   	<p>Japanese 
+										   		<span id="lang-level">
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   		</span>
+										   	</p>
+
+										   	<p>Spanish 
+										   		<span id="lang-level">
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-solid fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   			<i class="fa-regular fa-circle"></i>
+										   		</span>
+										   	</p>
+
+
+
+										</div>
+									</div>
+
+
+
+									<div id="coding-knowledge">
+										<div id="coding-section" class="resumeSections">
+
+											<span id="resumeCoding"><i class="fa-solid fa-code"></i> Coding Software Skill Status </span>
+											
+											<div id="wrapCoddingItem">
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>90 %</span>
+													</div>	
+													<span>Mobile Software Developer</span>
+												</div>
+
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>60 %</span>
+													</div>	
+													<span>Web Software Developer </span>
+												</div>
+
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>60 %</span>
+													</div>	
+													<span>Desktop Software Developer</span>
+												</div>
+
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Assambly & Microcontrolers Software Developer</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Kotlin</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>PowerShell Bash - Shell Scripting</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Ruby , Angular / JavaScripthtml,css, php, mysql, Java</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Visual Basic 2008</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Assembly</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Lisp - Functional Language</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Swift</span>
+												</div>
+												
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Prolog</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Matlab</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Ajax / JQuery</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+															<span>50 %</span>
+													</div>	
+													<span>Python</span>
+												</div>
+
+												<div class="itemCoding">
+													<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+															<span>20 %</span>
+													</div>	
+													<span>C / C# / C++</span>
+												</div>
+
+
+											</div>
+											
+											
+
+
+											<div class="separator-resume"></div>
+
+											
+
+										</div>
+										<div id="knowledge-section" class="resumeSections">
+										   <span id="resumeKnowledge"><i class="fa-solid fa-code-merge"></i> IT Knowledge</span>
+										 
+										 	<div id="wrapItemKnowledge">
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Programming languages: </span>
+											 		<p>Java, PHP, Ruby, C#, C / C++, SQL, PL/SQL, ASP .NET, Objective-C, Visual Basic</p>
+											 	</div>
+
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Technologies, libraries and frameworks: </span>
+											 		<p>
+											 			<span class='itemTech'>Java : </span> JEE, Spring, Spring Security, Spring Boot, JPA, Hibernate, Flyway, Swing, JSF, Apache Wicket, Velocity, GWT, JXL, Oracle Portal
+														<br><span class='itemTech'>PHP : </span> CodeIgniter, Laravel, Symphony, Zend, Yii, WordPress, Joomla, Drupal, Magento, Prestashop
+														<br><span class='itemTech'>C# :</span> Microsoft Visual Studio, Telerik Framework, Entity Framework, ASP Web API, WinForms, ASP.NET MVC, Neodynamic SDK
+														<br><span class='itemTech'>.NET :</span> ASP.NET, Visual Basic
+														<br><span class='itemTech'>Ruby :</span> Rails, Capistrano, RMagick, Geokit, RSpec
+														<br><span class='itemTech'>C++ : </span> Windows API, ActiveX, XCode, wxWidgets, STL, WinDDK, Qt Framework, Microsoft CRM
+														<br><span class='itemTech'>UI and Web development frameworks :</span> Angular, React, VueJS
+														<br><span class='itemTech'>Ajax and JavaScript :</span> NodeJS, JQuery, ExtJS, JSON, MooTools, ASP.NET Ajax control Toolkit, Dojo, etc.
+														<br><span class='itemTech'>Web technologies :</span> Bootstrap, Typescript, D3.js, XHTML, HTML5, XML, XSL, XPath, XQuery, SAX, DOM, StAX, TinyMCE, JW Player, Highcharts, amCharts, Modernizr, Oauth2 security, Omniauth security
+														<br><span class='itemTech'>Mobile :</span> React Native, PhoneGap, iPhone SDK, Android SDK, Xamarin, JQuery Mobile
+														<br><span class='itemTech'>BI :</span> Tableau, Pentaho Business Inteligence, Crystal Reports
+														<br><span class='itemTech'>Web Services :</span> REST API, Apache CXF, Axis, SOAP, WSDL, JAXB, JAX-WS
+														<br><span class='itemTech'>Messaging Middleware :</span> Apache Kafka, ActiveMQ, IBM MQ Series</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>IDE : </span>
+											 		<p>Eclipse, Idea, MS Visual Studio, Aptana Studio, XCode</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Versioning Control : </span>
+											 		<p>Git, SVN, Rational ClearCase, Rational Synergy, MS Visual Source Safe</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Build tools : </span>
+											 		<p>Maven, Ant</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Continuous integration tools : </span>
+											 		<p>Jenkins, Bamboo</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Databases/Data storages : </span>
+											 		<p>MySQL, PostgreSQL, Oracle, MS SQL Server, Derby, Lucene/SOLR/ElasticSearch, MongoDB, LDAP, etc.</p>
+											 	</div>
+											 
+											   <div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Application and web servers : </span>
+											 		<p>Apache Tomcat, JBoss AS, Jetty, IBM WebShere, Oracle Application Server, WebLogic, Windows Server IIS, Nginx</p>
+											 	</div>
+
+											 	 <div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Cloud computing : </span>
+											 		<p>Amazon Web Services, Azure, private cloud</p>
+											 	</div>
+
+											 	 <div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Enterprise Service Bus : </span>
+											 		<p> BizTalk</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Sales Force Management : </span>
+											 		<p> SalesForce</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>UX/UI Design : </span>
+											 		<p>
+											 			<span class='itemTech'>UX Tools :</span> Axure, Adobe XD, Invision, Moqups
+											 			<br><span class="itemTech">UI and graphic Tools </span> Adobe Photoshop, Adobe Illustrator, Zeplin, Adobe XD</p>
+											 	</div>
+											 
+											 <div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Testing : </span>
+											 		<p>
+											 			<span class='itemTech'>Testing tools and frameworks :</span> Selenium, Protractor, Ranorex, JMeter, JBehave, Testing Anywhere, WebUI Test Studio, TestComplete, SOAP UI, EasyMock, Mockito, jMock, WebUI test Tool, TCMS, Cucumber, ProjectLocker
+											 			<br><span class="itemTech">Issue management tools </span> JIRA, Redmine, Rally, Trac, ActiveCollab, Rational ClearQuest, Bugzilla, Bugzero, Remedy, TestLink, TestTrack, etc.</p>
+											 	</div>
+
+											 	 <div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Project management : </span>
+											 		<p>
+											 			<span class='itemTech'>Project planning and management :</span> Jira, Confluence, MS Project, ScrumDesk
+											 			<br><span class="itemTech">Effort estimation : </span> Top-down, PERT
+											 			<br><span class="itemTech">Risk identification, evaluation and minimization : </span>Software-FMEA
+											 			<br><span class="itemTech">Software development methodologies</span>Agile, Scrum, Kamban, Scrumban, RUP, DSDM, etc.
+											 		</p>
+											 	</div>
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<span>Software analysis, arhitecture and design : </span>
+											 		<p>
+											 			<span class='itemTech'>Brainstorming</span> 
+											 			<br><span class='itemTech'>Mind-Map</span> 
+											 			<br><span class='itemTech'>Design patterns</span> 
+
+											 			<br><span class="itemTech">UML tools and techniques : </span> Rational Rose, MS Visio, NetBeans, Open Office Draw, Star UML, Together, Requirements’ matrix
+											 			<br><span class="itemTech">Database modeling tools : </span> MySQL Workbench, DbVisualizer, Oracle SQLDeveloper, Toad
+											 		</p>
+											 	</div>
+
+
+
+											 	
+
+
+
+
+
+
+
+
+										
+
+
+
+
+
+
+											 	<div id="itemKnowledge">
+											 		<i class="fa-solid fa-check"></i>
+											 		<p>Website Hosting     Disponibilitatea de a lucra in mai multe ture. Detin masina propri pentru a realiza deplasarea la servici - Decontare transport..... 		 ambitioasa, politicoasa,  prietenoasa, analitica, punctuala , flexibila, honesta si imaginativa.Persoana organizata, disciplinata atenta la detalii si cu abilitati de a lucra in echipa cat si pe cont propriu.
+
+														  Compentente de ultilizare a dispozitivelor mecanice, electronice si tehnologice. Competente de utilizarea a calculatorului si a programe precum : photoshop, google docs.etc.Indemanatic, onest, rezistent la efort fizic mediu.  Sunt deschis la minte, inovator, cu o minte intrebatoare, fantezista, imaginativa dar si logica si conectata la realitate</p>
+											 	</div>
+										 	</div>
+
+										 	
+											<span id="resumeKnowledge"><i class="fa-solid fa-code-merge"></i> IT Tools Technologies</span>
+										 
+											<div id="wrapITTechnologies">
+
+												<div class="itemITtechnologies">
+													<div class="imageItemItTechnologies" id="gitITem"></div>
+													<p>GitHub</p>
+												</div>
+
+												<div class="itemITtechnologies">
+													<div class="imageItemItTechnologies" id="gradelITem"></div>
+													<p>Gradell</p>
+												</div>
+
+												<div class="itemITtechnologies">
+													<div class="imageItemItTechnologies" id="dockerITem"></div>
+													<p>Docker</p>
+												</div>
+												
+											</div>
+
+									
+											<div class="separator-resume"></div>
+
+									
+
+											<span id="resumeKnowledge"><i class="fa-solid fa-code-merge"></i> Hardware Developing Skills </span>
+										 
+											<div id="wrapITTechnologies">
+
+												<div class="itemITtechnologies">
+													
+													<p>Create Microfon Device</p>
+												</div>
+
+												<div class="itemITtechnologies">
+													
+													<p>Create Display Device</p>
+												</div>
+
+												<div class="itemITtechnologies">
+													<p>Create Difuzor device</p>
+												</div>
+												
+											</div>
+
+
+										</div>
+									</div>
+
+
+									
+									
+									
+
+
+									
+
+								</div>
+
+								<div id="workSectionRightCV" class="itemsRightSection-CV">
+									<p class="titleSectionRightCV">My <span>work</span></p>
+									
+
+								</div>
+
+								<div id="contactSectionRightCV" class="itemsRightSection-CV">
+									<p class="titleSectionRightCV">Date de <span>Contact</span></p>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.329803982467!2d21.25319207679424!3d45.76458031334588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745676c0d673609%3A0x550d3930d7c5f4d6!2sStrada%20Lugojului%2C%20Timi%C8%99oara!5e0!3m2!1sro!2sro!4v1688201750593!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+										<div id="listContact">
+
+												<div class="contactItemClass">
+												    <div class="contactContentClass">
+												     	<span>Phone </span>
+												     	<div class="contactItemClassValue">+40 738 178 368</div>
+												    </div>
+											    </div>
+
+											    <div class="contactItemClass">
+												    <div class="contactContentClass">
+												     	<span>Email </span>
+												     	<div class="contactItemClassValue">adriandeaconu98@gmail.com</div>
+												    </div>
+											    </div>
+
+											    <div class="contactItemClass">
+												    <div class="contactContentClass">
+												     	<span>Linkedin </span>
+												     	<div class="contactItemClassValue">@adriandeaconu98</div>
+												    </div>
+											    </div>
+
+											     <div class="contactItemClass">
+												    <div class="contactContentClass">
+												     	<span>Location </span>
+												     	<div class="contactItemClassValue">Ro. Timis Str. Lugojului</div>
+												    </div>
+											    </div>
+
+											  
+						  
+										</div>
+
+								
+
+								</div>
+
+
+
+
+
+								
+							</div>
+
+
+						</div>
+					</div></div>
+
+
+				<div id="cultivationSection">
+					<div id="cultivationSectionContent">
+						<div id="leftSectionCultivation" class="col-cv">
+							
+							<div id="navIntoMyCourseLeftSection">
+								
+								<div id="headerOfMyCourseNav">
+									
+									<div id="headCourseSec1">
+										<i class="fa-solid fa-book fa-xl myIcon"></i>
+										<div id="inlineDot">
+											<i class="fa-regular fa-circle fa-2xs"></i>
+											<i class="fa-regular fa-circle fa-2xs"></i>
+											<i class="fa-regular fa-circle fa-2xs"></i>
+											<i class="fa-regular fa-circle fa-2xs"></i>
+										</div>
+										<p id="nrLessonCourse">134 Lessons</p>
+									</div>
+
+									<div id="headCourseSec2">
+										<p>Course</p>
+										<h3 id="titleCoursH3">Introducere In HTML</h3>
+										<span id="spanDescription" class="spanDescription">
+											Dis is the description of the course..Html is language web design and Progress </span>
+
+										<span class="spanProgress">Progress Course</span>
+
+									</div>
+								</div>
+
+								<div class="search-box">
+											<div class="search-box-row">
+												<input type="text" placeholder="Search Anything" id="input-box" autofocus="on" autocomplete="off">
+												<button><i class="fa-solid fa-magnifying-glass"></i></button>
+											</div>
+
+											<div class="result-box">
+												
+											</div>
+
+								</div>
+
+
+								<div id="listLessonOfTheCours">
+									<div class="titleItemLesson">
+										
+										<h3 ><i class="fa-regular fa-circle fa-lg"></i>Introducere HTML</h3>
+										<div class="rightSubLessons">
+						                    <span><span id="no_finish_lesson"> 0</span> / <span id="no_lesson">2</span></span>
+						                    <i class="fas fa-angle-down"></i>
+						                </div>
+									</div>
+
+									 <div class="bottomSeparator"></div>
+
+
+								</div>
+
+
+								
+
+
+
+							</div>						
+
+
+						</div>
+						<div id="rightSectionCultivation" class="col-cv">
+							
+								<div id="popupSectionForSearch">
+									
+								</div>
+
+								<div id="headerRightSectionCultivation">
+									
+										
+
+								</div>
+
+								<div id="headerOfSection">
+										<i class="fa-regular fa-folder-open"></i>
+										<p>My Courses <i class="fa-sharp fa-solid fa-chevron-right"></i> hTML</p>
+										<i onclick="exitFromCourse()" id="myIconExist" class="fa-sharp fa-solid fa-circle-xmark myIconExist"></i>
+									</div>
+
+								<div id="bodyRightSectionCultivation">
+									
+							
+											<div class="itemCourses">
+											  <img onclick="enterToCourse('course_html')" src="img/courses/html.jpg" class='imgItemCours'>
+											</div>
+
+											<div class="itemCourses">
+												<img onclick="enterToCourse('course_css')" src="img/courses/css.png" class='imgItemCours'>
+											</div>
+
+										<div class="itemCourses"></div>
+
+										<div class="itemCourses"></div>
+										<div class="itemCourses"></div>
+										<div class="itemCourses"></div>
+
+								</div>
+
+							
+
+								<div id="bodyContentOfMyCourses">
+										
+
+								</div>
+
+
+						</div>
+					</div></div>
+
+
+				<div id="listSkills">
+
+							<div id="proj1" class="skill-class">
+								<a  href="projects/project - 1/index.html">
+								    <div class="skill-content">
+								     	<span>Design </span>
+								     	<div class="skillValue">NavBar Effect</div>
+								    </div>
+								</a>
+						    </div>
+
+						    <div class="skill-class">
+							    <a href="">
+								    <div class="skill-content">
+								     	<span>Viteza </span>
+								     	<div class="skillValue">Coffe Shop</div>
+								    </div>
+								</a>
+						    </div>
+
+						    <div id="proj3" class="skill-class">
+						    	<a href="">
+								    <div class="skill-content">
+								     	<span>Function</span>
+								     	<div class="skillValue">Digital Clock</div>
+								    </div>
+							    </a>
+						    </div>
+
+						    <div class="skill-class">
+							    <div class="skill-content">
+							     	<span>Analiza </span>
+							     	<div class="skillValue">Lv 2 SP</div>
+							    </div>
+						    </div>
+
+						      <div class="skill-class">
+							    <div class="skill-content">
+							     	<span>Exprimare </span>
+							     	<div class="skillValue">L+C</div>
+							    </div>
+						    </div>
+
+						      <div class="skill-class">
+							    <div class="skill-content">
+							     	<span>Selectare </span>
+							     	<div class="skillValue">10 PIS</div>
+							    </div>
+						    </div>
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		//definim variabila ca va fi utilizata de diferite pagini js
+		let db_lessons_map;
+		let db_lessons_category;
+		let db_title_cours;
+		let db_description_cours;
+		
+		let contentOfTheLesson;
+		let titleLesson;
+		let shortDescription1;
+		let shortDescriptionLesson1;
+		let shortDescription2;
+		let shortDescriptionLesson2;
+		let exampleTitle;
+		let exampleContent;
+		let exampleSection1;
+
+		const ArrayOfTextContent = [""];
+		const ArrayOfHtmlStructure =[""]; 
+
+
+		//diagram 2
+		  const ctx = document.getElementById('myChart');
+
+		   const datis = {
+			  labels: [
+			    'Eating',
+			    'Learning',
+			    'Sleeping',
+			    'Creating',
+			    'Sex',
+			    'Discovering',
+			    'Drinking'
+			  ],
+			  datasets: [{
+			    label: 'My Domains of Interest',
+			    data: [65, 100, 70, 100, 70, 100, 35],
+			    fill: true,
+			    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+			    borderColor: 'rgb(255, 99, 132)',
+			    pointBackgroundColor: 'rgb(255, 99, 132)',
+			    pointBorderColor: '#fff',
+			    pointHoverBackgroundColor: '#fff',
+			    pointHoverBorderColor: 'rgb(255, 99, 132)'
+			  }, {
+			    label: 'Others Domains of Interest',
+			    data: [65, 50, 70, 60, 70, 48, 75],
+			    fill: true,
+			    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+			    borderColor: 'rgb(54, 162, 235)',
+			    pointBackgroundColor: 'rgb(54, 162, 235)',
+			    pointBorderColor: '#fff',
+			    pointHoverBackgroundColor: '#fff',
+			    pointHoverBorderColor: 'rgb(54, 162, 235)'
+			  }]
+			};
+
+
+		  new Chart(ctx, {
+		    type: 'radar',
+		    data: datis,
+		    options: {
+			    	elements: {
+				      line: {
+				        borderWidth: 3
+				      },
+				      point: {
+				      	radius:5
+				      }
+			    	},
+			       scales: {
+				        r: {
+				        	pointLabels: {
+					          font: {
+					            size: 13
+					          }
+					        },
+
+				            angleLines: {
+				                display: false
+				            },
+				            suggestedMin: 50,
+				            suggestedMax: 100
+				        }
+				    }
+			},
+		  });
+
+
+
+
+		 
+		//end diagram 2
+
+
+
+		function showPageAbout(idPage){
+			if (idPage==1) {
+				 document.getElementById("aboutPage1").style.display='block';
+				 document.getElementById("aboutPage2").style.display='none';
+			}else if(idPage==2){
+				 document.getElementById("aboutPage1").style.display='none';
+				 document.getElementById("aboutPage2").style.display='block';
+			}
+		}
+
+		function showSection(idSection) {
+			// body...
+			if (idSection==1) {
+				 document.getElementById("cvPage").classList.remove("visitedPage");
+				 document.getElementById("trainingPage").classList.remove("visitedPage");
+				 document.getElementById("projectPage").classList.add("visitedPage");
+
+				 document.getElementById("listSkills").style.display = 'grid';
+				 document.getElementById("cv-info").style.display = 'none';
+				 document.getElementById("cultivationSection").style.display = 'none';
+
+			}else if(idSection==2){
+				 document.getElementById("projectPage").classList.remove("visitedPage");
+				 document.getElementById("cvPage").classList.add("visitedPage");
+				 document.getElementById("trainingPage").classList.remove("visitedPage");
+				
+
+				 document.getElementById("listSkills").style.display = 'none';
+				 document.getElementById("cv-info").style.display = 'block';
+				 document.getElementById("cultivationSection").style.display = 'none';
+
+
+			}
+			else if(idSection==3){
+				 document.getElementById("projectPage").classList.remove("visitedPage");
+				 document.getElementById("trainingPage").classList.add("visitedPage");
+				 document.getElementById("cvPage").classList.remove("visitedPage");
+				
+
+
+				 document.getElementById("listSkills").style.display = 'none';
+				 document.getElementById("cv-info").style.display = 'none';
+				 document.getElementById("cultivationSection").style.display = 'block';
+			}
+		}
+
+
+		function enterToCourse(myID){
+		
+			
+			document.getElementById("myIconExist").style.display="block";
+
+			document.getElementById("leftSectionCultivation").style.display = 'block';
+
+			document.getElementById("bodyRightSectionCultivation").style.display = 'none';
+			document.getElementById("bodyContentOfMyCourses").style.display = 'block';
+			document.getElementById("navIntoMyCourseLeftSection").style.display = 'block';
+			getLessonPlan("courses/"+myID+"/lessons_conf.js",false,myID);
+		}
+
+
+	
+
+		function getLessonPlan(FILE_URL,async,course_id){
+
+    		  let scriptEle = document.createElement("script");
+
+			  scriptEle.setAttribute("src", FILE_URL);
+			  scriptEle.setAttribute("type", "text/javascript");
+			  scriptEle.setAttribute("async", async);
+			  //if we set async to false, then the file will be loaded and executed first before proceeding to the next action.
+			  
+
+			  document.body.appendChild(scriptEle);
+
+			  // success event 
+			  scriptEle.addEventListener("load", () => {
+			    console.log("File loaded");
+			    console.log(db_lessons_map);
+
+
+			    var myLessonPlan="";
+			    for (var i = 0; i < db_lessons_map.length; i++) {
+			    	myLessonPlan = myLessonPlan+
+			    	'<div onclick="loadLessonContent(\''+db_lessons_map[i][1]+'\',\''+course_id+'\')" class="titleItemLesson"><h3><i class="fa-regular fa-circle fa-lg"></i>'+db_lessons_map[i][0]+'</h3><div class="rightSubLessons"><span><span id="no_finish_lesson"> 0</span> / <span id="no_lesson">2</span></span><i class="fas fa-angle-down"></i> </div></div><div class="bottomSeparator"></div>'
+			    
+			    }
+
+			  
+			    console.log(db_lessons_map.length);
+			    nrLessonCourse
+			    document.getElementById("nrLessonCourse").innerHTML=db_lessons_map.length+" Lessons";
+				
+				document.getElementById("listLessonOfTheCours").innerHTML=myLessonPlan;
+				
+				//showContentOfThisLesson(db_lessons_map[0][1],course_id);
+				loadLessonContent(db_lessons_map[0][1],course_id);
+
+				document.getElementById("titleCoursH3").innerHTML=db_title_cours;
+				document.getElementById("spanDescription").innerHTML=db_description_cours;
+				//let vs = document.getElementById('exampleCode');
+				
+				
+								
+
+
+
+			  });
+			   // error event
+			  scriptEle.addEventListener("error", (ev) => {
+			    console.log("Error on loading file", ev);
+			    document.getElementById("listLessonOfTheCours").innerHTML="No details";
+			  });
+
+			  
+	  
+		}
+
+
+		function showContentOfThisLesson(myLessonID,course_id){
+			 let scriptEle = document.createElement("script");
+
+			  scriptEle.setAttribute("src", "courses/"+course_id+"/lessons/"+myLessonID);
+			  scriptEle.setAttribute("type", "text/javascript");
+			  scriptEle.setAttribute("async", false);
+			  //if we set async to false, then the file will be loaded and executed first before proceeding to the next action.
+			  
+
+			  document.body.appendChild(scriptEle);
+
+			  // success event 
+			  scriptEle.addEventListener("load", () => {
+			    console.log("File loaded");
+			    
+			    document.getElementById("bodyContentOfMyCourses").innerHTML=contentOfTheLesson;
+
+			  });
+
+
+			   // error event
+			  scriptEle.addEventListener("error", (ev) => {
+			    console.log("Error on loading file", ev);
+			    document.getElementById("bodyContentOfMyCourses").innerHTML="Page not exist";
+			  });	
+		}
+
+		function loadLessonContent(myLessonID,course_id){
+
+			//get the number of `<script>` elements that have the correct `src` attribute
+			var len = $('script').filter(function () {
+			    return ($(this).attr('src') == 'js/lessonsDesignFunctions.js');
+			}).length;
+
+			//if there are no scripts that match, the load it
+			if (len === 0) {
+			   
+						 let scriptEle = document.createElement("script");
+
+						  scriptEle.setAttribute("src", "js/lessonsDesignFunctions.js");
+						  scriptEle.setAttribute("type", "text/javascript");
+						  scriptEle.setAttribute("async", false);
+						  //if we set async to false, then the file will be loaded and executed first before proceeding to the next action.
+						  
+
+						  document.body.appendChild(scriptEle);
+
+						  // success event 
+						  scriptEle.addEventListener("load", () => {
+								    console.log("File 'lessonsDesignFunctions' was loaded");
+									//dupa ce functile de design au fost incarcate vom afisa pagina.
+									let lesson_file = document.createElement("script");
+									lesson_file.setAttribute("src","courses/"+course_id+"/lessons/"+myLessonID);
+									lesson_file.setAttribute("type","text/javascript");
+									lesson_file.setAttribute("async",false);
+
+									document.body.appendChild(lesson_file);
+					 				
+					 				// success event 
+							        lesson_file.addEventListener("load", () => {
+								    		console.log("File loaded");
+								   			document.getElementById("bodyContentOfMyCourses").innerHTML=contentOfTheLesson;
+								  	});
+
+							        // error event
+								  	lesson_file.addEventListener("error", (ev) => {
+								    	console.log("Error on loading file", ev);
+								    	document.getElementById("bodyContentOfMyCourses").innerHTML="Page not exist";
+								  	});
+						    });
+
+
+						   // error event
+						   scriptEle.addEventListener("error", (ev) => {
+
+						   	 	console.log("Error on loading file 'lessonsDesignFunctions' >>>", ev);
+						    	document.getElementById("bodyContentOfMyCourses").innerHTML="Error ! - Cannot load the .js design functions to create this page";
+						  	});
+			  	}else{
+			  		showContentOfThisLesson(myLessonID,course_id);
+			  	}			
+		}
+
+
+
+
+
+		function exitFromCourse(){
+			document.getElementById("myIconExist").style.display="none";
+			document.getElementById("leftSectionCultivation").style.display = 'none';
+			document.getElementById("bodyRightSectionCultivation").style.display = 'grid';
+			document.getElementById("bodyContentOfMyCourses").style.display = 'none';
+		}
+
+		function copyText(id) {
+
+		  var secretKey = document.getElementById('exampleCode'+id);
+		  if (secretKey) {
+		    navigator.clipboard.writeText(secretKey.value);
+		    showNotification('Copied!',id);
+		  }else{
+		  	 showNotification('Failed to Copy!',id);
+		  }
+		}
+
+		function showNotification(msg,id) {
+		  document.getElementById('notification-message'+id).innerHTML=msg;
+		  document.getElementById('notification-message'+id).style.display='block';
+		  setTimeout(function() {
+		   		  document.getElementById('notification-message'+id).style.display='none';
+		  }, 1000);
+		}
+
+		function showDateCV(argumentID) {
+			// body...
+			if (argumentID==4) {
+				document.getElementById("contactSectionRightCV").style.display="block";
+				document.getElementById("resumeSectionRightCV").style.display="none"
+				document.getElementById("aboutSectionRightCV").style.display="none";
+				document.getElementById("workSectionRightCV").style.display="none";
+			}else if (argumentID==3) {
+				document.getElementById("contactSectionRightCV").style.display="none";
+				document.getElementById("resumeSectionRightCV").style.display="none"
+				document.getElementById("aboutSectionRightCV").style.display="none";
+				document.getElementById("workSectionRightCV").style.display="block";
+			}else if (argumentID==2) {
+				document.getElementById("contactSectionRightCV").style.display="none";
+				document.getElementById("resumeSectionRightCV").style.display="block"
+				document.getElementById("aboutSectionRightCV").style.display="none";
+				document.getElementById("workSectionRightCV").style.display="none";
+			}else if (argumentID==1) {
+				document.getElementById("contactSectionRightCV").style.display="none";
+				document.getElementById("resumeSectionRightCV").style.display="none"
+				document.getElementById("aboutSectionRightCV").style.display="block";
+				document.getElementById("workSectionRightCV").style.display="none";
+			}
+		}
+	
+	</script>
+
+	<script src="js/autocomplete.js"></script>
+</body>
+</html>
