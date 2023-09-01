@@ -6,6 +6,9 @@
 
 ***
 
-![image](https://user-images.githubusercontent.com/33568801/112190671-e8046e00-8c0d-11eb-908f-ff415c2f8d01.png)
+# CV RESUME
+Proiect web pentru crearea unui CV cu ajutorul limbajului de 'programare' HTML & CSS. Pentru a vedea cum merge, proiectul poate fi rulat pe aceasta pagina : 
+
+![IMAGE_DESCRIPTION](1%20-%20login.JPG)
 
 
