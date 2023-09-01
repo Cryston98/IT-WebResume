@@ -787,7 +787,13 @@ nav ul li a:hover{
     color: #8BC34A;
     margin-bottom: 30px;
     display: block;
+
 }
+#resumeSectionRightCV{
+  position: relative;
+  height: 100%;
+}
+
 .resumeSections{
     width: calc(50% - 20px);
     margin: 0px 10px;
@@ -804,24 +810,44 @@ nav ul li a:hover{
     width: fit-content;
 }
 .name-resume{
-  font-size: 17px;
+  font-size: 20px;
     color: #323232;
     font-weight: 500;
     text-transform: none;
 }
 .location-resume{
-      margin: 0 0 11px 0;
-    font-size: 14px;
-    color: #999999;
+      margin: 0 0 2px 0;
+    font-size: 17px;
+    color: #5d5e61;
     font-weight: 400;
     text-transform: none;
 }
+.description-resume{
+  font-size: 15px;
+    color: #8bc34a;
+}
+
+.personalDataItem:hover > .PI{
+    background: #44d34a;
+    cursor: pointer;
+}
+
+.personalDataItem:hover {
+    font-size: 17px;
+    color: #0e1f56;
+}
+
 .separator-resume{
   margin: 30px 0px;
 }
+
 #edu_exp,#design_lang,#description-personal,#coding-knowledge,#description-personal2{
       display: flex;
     flex-direction: row;
+}
+
+#resumePage2{
+  display: none;
 }
 
 #resumeDesign,#resumeLang,#resumeCoding,#resumeKnowledge{
@@ -897,8 +923,21 @@ nav ul li a:hover{
   height: 100px;
   text-align: center;
   border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0a2c64 25%, #e1e1e1 0);  
+}
+
+.progress-bar1{
   background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0a2c64 75%, #e1e1e1 0);  
 }
+
+.progress-bar2{
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0a2c64 73%, #e1e1e1 0);  
+}
+
+.progress-bar3{
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0a2c64 53%, #e1e1e1 0);  
+}
+
 #wrapCoddingItem{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -918,7 +957,7 @@ nav ul li a:hover{
   }
 
   .personalDataItem{
-    color:#515252;
+    color:#9b9b9b;
     font-size: 15px;
     position: relative;
     padding-bottom: 5px;
@@ -1105,8 +1144,10 @@ nav ul li a:hover{
   cursor: pointer;
 }
 
-.card-key-qualities:hover > .hide-popup-key{ 
-  display:block; 
+.card-key-qualities:hover { 
+    background: #44d34a;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -1123,6 +1164,26 @@ nav ul li a:hover{
     cursor: pointer;
     width: 300px;
 }
+.paginationResume{
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.buttonsPagination{
+    background: #8bc34a;
+    margin: 10px;
+    font-size: 18px;
+    padding: 8px 13px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.activePagePagination{
+  background: red !important;
+}
+
 
 .paginationAbout{
    top: 10px;
@@ -1167,32 +1228,43 @@ nav ul li a:hover{
 }
 
 #gitITem{
+  height: 95px;
+  width: 100px;
   background: url(../img/gitItem.png);
 }
 
 #dockerITem{
   background: url(../img/dockerItem.png);
+    height: 100px;
+  width: 137px;
 }
 
 #gradelITem{
+  height: 100px;
+  width: 150px;
   background: url(../img/gradelItem.png);
 }
 
 #gitITem,#dockerITem,#gradelITem{
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-x:center;
 }
 .imageItemItTechnologies{
   margin-bottom: 10px;
 
 }
 .itemITtechnologies{
+  align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0px auto;
+      width: 75px;
+    height: 75px;
 }
 .itemITtechnologies p{
+  width: 100px;
       color: #fff;
     font-size: 20px;
     font-family: 'Rowdies';
@@ -1200,20 +1272,8 @@ nav ul li a:hover{
     clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 7% 100%);
 }
 
-#gitITem{
-  height: 95px;
-  width: 100px;
-}
 
-#dockerITem{
-  height: 100px;
-  width: 137px;
-}
 
-#gradelITem{
-  height: 100px;
-  width: 150px;
-}
 
 #wrapITTechnologies{    
     display: grid;
@@ -1228,8 +1288,90 @@ nav ul li a:hover{
 }
 
 #itemKnowledge{
+  line-height: 29px;
   margin-bottom: 20px;
 }
 .itemTech{
   font-size: 15px;
+}
+
+#myChart3{
+  width: 100%;
+  margin: 0px auto;
+}
+
+#mySpirit{
+
+}
+
+.workWith{
+padding: 3px 6px;
+    font-size: 14px;
+    color: white;
+    background: #75d510;
+    margin: 0px 3px;
+}
+.heardAbout{
+  padding: 3px 6px;
+    font-size: 14px;
+    color: white;
+    background: red;
+    margin: 0px 3px;
+}
+.notHeard{
+   padding: 3px 6px;
+    font-size: 14px;
+    color: white;
+    background: #8b8b8b;
+    margin: 0px 3px;
+}
+#legendaLanguage{
+  margin: 20px 0px;
+    border-bottom: 2px dashed black;
+}
+
+#resumeExperience{
+      font-size: 25px;
+    color: #8BC34A;
+    margin-bottom: 30px;
+    display: block;
+}
+.date-job{
+      margin: 10px 0px 5px 0px;
+    padding: 0 5px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ccc;
+    font-weight: 400;
+    text-transform: none;
+    border: 1px solid #eeeeee;
+    width: fit-content;
+}
+.name-job{
+      font-size: 20px;
+    color: #323232;
+    font-weight: 500;
+    text-transform: none;
+}
+.job-description{
+  color: #13367d;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.job-description i{
+  margin-right: 10px;
+}
+.job-description span{
+     margin-left: 40px;
+    color: #626363;
+    display: list-item;
+     line-height: 22px; 
+    list-style-type: disc;
+}
+.job-location{
+      margin-bottom: 3px;
+    color: #8BC34A;
+}
+.job-location a{
+  color:white;
 }
