@@ -240,6 +240,39 @@ nav ul li a:hover{
   position: relative;
   z-index: 2;
 
+
+}
+
+#hobby-wrap-key{
+  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    gap:5px;
+    place-self: center;
+    position: relative;
+    z-index: 2;
+}
+#hobby-wrap-key2{
+   margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    gap:0px;
+    place-self: center;
+    position: relative;
+    z-index: 2;
+}
+#hobby-wrap-key3{
+   margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    gap:0px;
+    place-self: center;
+    position: relative;
+    z-index: 2;
+ 
 }
 
 
@@ -254,8 +287,8 @@ nav ul li a:hover{
     font-size: 19px;
 }
 #lang-section p{
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
   
   position: relative;
 }
@@ -722,9 +755,9 @@ nav ul li a:hover{
 #menuCV{
       position: absolute;
     z-index: 10;
-    width: 65px;
+    width: 70px;
     background: red;
-    left: -70px;
+    left: -75px;
 }
 #menuCV ul{
   list-style: none;
@@ -772,23 +805,27 @@ nav ul li a:hover{
     text-align: center;
     color: #3a3a3a;
 }
+#socialMedia a{
+  color: #333;
+}
 #socialMedia i{
   margin: 5px;
 }
 
-#contactSectionRightCV,#resumeSectionRightCV,#workSectionRightCV{
+#contactSectionRightCV,#resumeSectionRightCV,#workSectionRightCV,#skillSectionRightCV{
   display: none;
 }
 
 
 
-#resumeSectionRightCV #resumeExperience,#resumeSectionRightCV #resumeEducation, #resumeHobby,#resumePersonal, #resumeDescription, #why-hire-me-section{
+#resumeExperience,#resumeSectionRightCV #resumeEducation, #resumeHobby,#resumePersonal, #resumeDescription, #why-hire-me-section{
       font-size: 25px;
     color: #8BC34A;
     margin-bottom: 30px;
     display: block;
-
 }
+
+
 #resumeSectionRightCV{
   position: relative;
   height: 100%;
@@ -811,7 +848,7 @@ nav ul li a:hover{
 }
 .name-resume{
   font-size: 20px;
-    color: #323232;
+    color: #7b2525;
     font-weight: 500;
     text-transform: none;
 }
@@ -833,7 +870,7 @@ nav ul li a:hover{
 }
 
 .personalDataItem:hover {
-    font-size: 17px;
+    font-size: 16px;
     color: #0e1f56;
 }
 
@@ -841,7 +878,7 @@ nav ul li a:hover{
   margin: 30px 0px;
 }
 
-#edu_exp,#design_lang,#description-personal,#coding-knowledge,#description-personal2{
+#edu_exp,#design_lang,#description-personal,#coding-knowledge,#description-personal2,#edu_ins{
       display: flex;
     flex-direction: row;
 }
@@ -877,6 +914,10 @@ nav ul li a:hover{
   background: #0b1842;
 
 }
+.titleItem i{
+  font-size: 20px;
+}
+
 .titleItem{color:#0b1842;}
 .mobileItem{
   width: 70%;
@@ -1122,20 +1163,14 @@ nav ul li a:hover{
     height: 34px;
     line-height: 34px;
     border-radius: 3px;
-    margin-right: 15px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
+       display: flex;
+    flex-direction: column;
 }
-#hobby-wrap-key{
-  margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;
-    place-self: center;
-    position: relative;
-    z-index: 2;
-}
+
 .card-key-qualities i{
   position: absolute;
   right: -10px;
@@ -1256,17 +1291,16 @@ nav ul li a:hover{
 }
 .itemITtechnologies{
   align-items: center;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin: 0px auto;
-      width: 75px;
-    height: 75px;
+  margin: 10px auto;
 }
-.itemITtechnologies p{
-  width: 100px;
-      color: #fff;
-    font-size: 20px;
+.itemITtechnologies p {
+    width: 100%;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 15px;
     font-family: 'Rowdies';
     background: #0a2c64;
     clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 7% 100%);
@@ -1274,14 +1308,6 @@ nav ul li a:hover{
 
 
 
-
-#wrapITTechnologies{    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-}
 #itemKnowledge p{
   font-family: none;
     font-size: 18px;
@@ -1374,4 +1400,129 @@ padding: 3px 6px;
 }
 .job-location a{
   color:white;
+}
+
+
+
+@media (max-width: 1700px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  #hobby-wrap{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1550px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  #additional-edu-section{
+      margin-top: 40px;
+   }
+   #edu_ins,#edu_exp,#coding-knowledge{
+    flex-direction: column;
+   }
+  #description-personal{
+    flex-direction: column;
+  }
+  .resumeSections {
+    width: calc(100% - 20px);
+  }
+  #hobby-wrap-key{
+       grid-template-columns: repeat(2, 1fr);
+     }
+
+
+
+  .personalDataItem{
+    font-size: 13px;
+   }
+   .personalDataItem:hover{
+    font-size: 14px;
+   }
+   .PI{
+    font-size: 14px;
+   }
+   #menuCV{
+    top: -70px;
+    left: 0px;
+   }
+   #menuCV ul {
+    width: 355px;
+    display: flex;
+}
+
+@media (max-width: 860px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ 
+  #hobby-wrap-key2{
+       grid-template-columns: repeat(1, 1fr);
+       gap: 5px;
+  }
+
+}
+@media (max-width: 750px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ 
+  #hobby-wrap-key3{
+       grid-template-columns: repeat(1, 1fr);
+       gap: 5px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ 
+
+  #cv-content {
+      flex-direction: column;
+  }
+
+  #leftSection-CV{
+    width: 100%;
+  }
+  #rightSection-CV{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ 
+  .personalDataItem{
+    font-size: 8px;
+   }
+   .personalDataItem:hover{
+    font-size: 9px;
+   }
+   .PI{
+    font-size: 9px;
+   }
+   .container{
+    padding: 0px;
+   }
+   .row {
+   
+    margin-top: 50px;
+}
+
+@media (max-width: 1850px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ 
+ #listContact{
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+}
+
+@media (max-width: 1260px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ 
+ #listContact{
+  grid-template-columns: repeat(1, 1fr);
+ }
+ .contactItemClass{
+  width: 100%;
+  margin: 0px auto;
+ }
 }
