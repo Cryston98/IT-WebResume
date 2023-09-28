@@ -2,7 +2,7 @@
 ## Installation
 
 * Proiect web pentru crearea unui CV cu ajutorul limbajului de 'programare' HTML & CSS. 
-* Pentru a vedea cum merge, proiectul poate fi rulat pe aceasta pagina : https://adrian-deaconu-cv.netlify.app/
+* Pentru a vedea cum merge, proiectul poate fi rulat pe aceasta pagina : https://adcvit.netlify.app/
 
 ***
 
